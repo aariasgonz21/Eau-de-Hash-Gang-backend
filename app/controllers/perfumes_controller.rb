@@ -1,3 +1,0 @@
-class PerfumesController < ApplicationController
-  
-end
