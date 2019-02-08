@@ -1,0 +1,227 @@
+  [1m[35m (729.2ms)[0m  [1m[35mCREATE DATABASE "eau-de-yerold_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (566.2ms)[0m  [1m[35mCREATE DATABASE "eau-de-yerold_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (63.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (34.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(673895366290308120)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePerfumes (20190208194839)
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (34.8ms)[0m  [1m[35mCREATE TABLE "perfumes" ("id" bigserial primary key, "name" character varying, "img" character varying, "catchphrase" character varying, "scent" character varying, "price" integer, "category" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190208194839_create_perfumes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (4.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190208194839"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (10.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-02-08 19:53:13.738742"], ["updated_at", "2019-02-08 19:53:13.738742"]]
+  ↳ bin/rails:9
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(673895366290308120)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (4.9ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 1], ["name", "Joe Lorenzo"], ["img", ""], ["catchphrase", "It's cool, man. The music in the bathrooms at WeWork is good."], ["scent", "birchwood & mint"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.057962"], ["updated_at", "2019-02-08 20:09:43.057962"]]
+  ↳ (byebug):1
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 2], ["name", "Gracie McGuire"], ["img", ""], ["catchphrase", "Dad?"], ["scent", "vanilla coconut"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.068223"], ["updated_at", "2019-02-08 20:09:43.068223"]]
+  ↳ (byebug):1
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 3], ["name", "Mariel Westervelt"], ["img", ""], ["catchphrase", "skrt skrt. When I was 23, I"], ["scent", "garlic butter"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.072186"], ["updated_at", "2019-02-08 20:09:43.072186"]]
+  ↳ (byebug):1
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 4], ["name", "Ana Arias-Gonzalez"], ["img", ""], ["catchphrase", "Let's Get This Bread"], ["scent", "egyptian musk incense"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.076091"], ["updated_at", "2019-02-08 20:09:43.076091"]]
+  ↳ (byebug):1
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 5], ["name", "Joel Rivera"], ["img", ""], ["catchphrase", "Drake is the best rapper of all time."], ["scent", "the grind"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.080049"], ["updated_at", "2019-02-08 20:09:43.080049"]]
+  ↳ (byebug):1
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.6ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 6], ["name", "Jesus Escalona"], ["img", ""], ["catchphrase", "It's not Charades! It's Mimica!"], ["scent", "Machine Learning"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.083981"], ["updated_at", "2019-02-08 20:09:43.083981"]]
+  ↳ (byebug):1
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 7], ["name", "Kiyana KikiDunzz Dunlock"], ["img", ""], ["catchphrase", "Don't Worry, I'm ok"], ["scent", "Fresh as Heck"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.088020"], ["updated_at", "2019-02-08 20:09:43.088020"]]
+  ↳ (byebug):1
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 8], ["name", "Taimur Shah"], ["img", ""], ["catchphrase", "Lamb over Rice is the only acceptable halal"], ["scent", "Brogrammer"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.092001"], ["updated_at", "2019-02-08 20:09:43.092001"]]
+  ↳ (byebug):1
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.6ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 9], ["name", "Thompson Plyler"], ["img", ""], ["catchphrase", "If you want to watch an RPG movie, that's basically lord of the rings"], ["scent", "Plank Club"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.096122"], ["updated_at", "2019-02-08 20:09:43.096122"]]
+  ↳ (byebug):1
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 10], ["name", "Patricio Carrasco"], ["img", ""], ["catchphrase", "*cackle that can be heard a mile away*"], ["scent", "Pine Tree"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.100238"], ["updated_at", "2019-02-08 20:09:43.100238"]]
+  ↳ (byebug):1
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 11], ["name", "Julissa Lema"], ["img", ""], ["catchphrase", "Sorry, I'm awkward!"], ["scent", "Daisy"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.103943"], ["updated_at", "2019-02-08 20:09:43.103943"]]
+  ↳ (byebug):1
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 12], ["name", "Stephen Argentina"], ["img", ""], ["catchphrase", "IF"], ["scent", "Tangerines"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.107701"], ["updated_at", "2019-02-08 20:09:43.107701"]]
+  ↳ (byebug):1
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 13], ["name", "John Mark Redding"], ["img", ""], ["catchphrase", "So. Anyway..."], ["scent", "Southern Hospitality"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.111443"], ["updated_at", "2019-02-08 20:09:43.111443"]]
+  ↳ (byebug):1
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 14], ["name", "Jonathan Biro"], ["img", ""], ["catchphrase", "Have you switched to VS Code yet?"], ["scent", "Churrasco"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.115467"], ["updated_at", "2019-02-08 20:09:43.115467"]]
+  ↳ (byebug):1
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 15], ["name", "Susan Isserman"], ["img", ""], ["catchphrase", "Just Chillin W/ My Homies"], ["scent", "fresh kitten"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.118922"], ["updated_at", "2019-02-08 20:09:43.118922"]]
+  ↳ (byebug):1
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 16], ["name", "Samuel Prada"], ["img", ""], ["catchphrase", "Heyy... That looks really good. :^)"], ["scent", "Baked Goodies"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.122018"], ["updated_at", "2019-02-08 20:09:43.122018"]]
+  ↳ (byebug):1
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 17], ["name", "Naomi Baisa"], ["img", ""], ["catchphrase", "*squeal*"], ["scent", "early 2000s Anime"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.125387"], ["updated_at", "2019-02-08 20:09:43.125387"]]
+  ↳ (byebug):1
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.3ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 18], ["name", "Anik Islam"], ["img", ""], ["catchphrase", "Did You Know...?"], ["scent", "Sandlewood"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.128462"], ["updated_at", "2019-02-08 20:09:43.128462"]]
+  ↳ (byebug):1
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 19], ["name", "La Fountain"], ["img", ""], ["catchphrase", "I don't do frontend, I do backend"], ["scent", "Strawberry"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-02-08 20:09:43.131550"], ["updated_at", "2019-02-08 20:09:43.131550"]]
+  ↳ (byebug):1
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.3ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 20], ["name", "Eric Kim"], ["img", ""], ["catchphrase", "*in tune of rap airhorn* perperper-perrr"], ["scent", "Success"], ["price", 75], ["category", "instructors"], ["created_at", "2019-02-08 20:09:43.134976"], ["updated_at", "2019-02-08 20:09:43.134976"]]
+  ↳ (byebug):1
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.3ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 21], ["name", "Gigi Hoagland"], ["img", ""], ["catchphrase", "*in tune of announcement horn* perper-perr"], ["scent", "Rose"], ["price", 75], ["category", "instructors"], ["created_at", "2019-02-08 20:09:43.138083"], ["updated_at", "2019-02-08 20:09:43.138083"]]
+  ↳ (byebug):1
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 22], ["name", "Tashawn Williams"], ["img", ""], ["catchphrase", "Don't think I'm on your side, I actually hate Drake"], ["scent", "jacket vests"], ["price", 75], ["category", "instructors"], ["created_at", "2019-02-08 20:09:43.141599"], ["updated_at", "2019-02-08 20:09:43.141599"]]
+  ↳ (byebug):1
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (2.0ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 23], ["name", "Graham Troyer-Joy"], ["img", ""], ["catchphrase", "I have had baby shark stuck in my head for 2 weeks"], ["scent", "death drop"], ["price", 75], ["category", "instructors"], ["created_at", "2019-02-08 20:09:43.145370"], ["updated_at", "2019-02-08 20:09:43.145370"]]
+  ↳ (byebug):1
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 24], ["name", "Kevin KevyWevy McClear"], ["img", ""], ["catchphrase", "*long side talk about his various walks of life*"], ["scent", "Discovery"], ["price", 75], ["category", "instructors"], ["created_at", "2019-02-08 20:09:43.151279"], ["updated_at", "2019-02-08 20:09:43.151279"]]
+  ↳ (byebug):1
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 25], ["name", "Jarrian McLean"], ["img", ""], ["catchphrase", "Sorry, I'm Late"], ["scent", "purple haze"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-02-08 20:09:43.155217"], ["updated_at", "2019-02-08 20:09:43.155217"]]
+  ↳ (byebug):1
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 26], ["name", "Roman Pirag"], ["img", ""], ["catchphrase", "I know you're tired of me complaining but I have a condo in the swamp"], ["scent", "Rock n Roll"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-02-08 20:09:43.159147"], ["updated_at", "2019-02-08 20:09:43.159147"]]
+  ↳ (byebug):1
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 27], ["name", "Jerold Kim"], ["img", ""], ["catchphrase", "NO. SHUT UP."], ["scent", "Soju"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-02-08 20:09:43.163092"], ["updated_at", "2019-02-08 20:09:43.163092"]]
+  ↳ (byebug):1
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 28], ["name", "Milan Sacher"], ["img", ""], ["catchphrase", "It's me, ya boi~"], ["scent", "Sunflowers"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-02-08 20:09:43.166995"], ["updated_at", "2019-02-08 20:09:43.166995"]]
+  ↳ (byebug):1
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[36mPerfume Load (2.1ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" ORDER BY "perfumes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPerfume Load (1.2ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m

@@ -1,0 +1,256 @@
+{
+  "Perfumes": [
+    {
+      "id": 1,
+      "name":"Joe Lorenzo",
+      "img": "",
+      "catchphrase": "It\'s cool, man. The music in the bathrooms at WeWork is good.",
+      "scent": "birchwood & mint",
+      "price": 50,
+      "category":"hashgang"
+    },
+    {
+      "id": 2,
+      "name":"Gracie McGuire",
+      "img": "",
+      "catchphrase": "Dad?",
+      "scent": "vanilla coconut",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 3,
+      "name":"Mariel Westervelt",
+      "img": "",
+      "catchphrase": "skrt skrt. When I was 23, I",
+      "scent": "garlic butter",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 4,
+      "name":"Ana Arias-Gonzalez",
+      "img": "",
+      "catchphrase": "Let\'s Get This Bread",
+      "scent": "egyptian musk incense",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 5,
+      "name":"Joel Rivera",
+      "img": "",
+      "catchphrase": "Drake is the best rapper of all time.",
+      "scent": "the grind",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 6,
+      "name":"Jesus Escalona",
+      "img": "",
+      "catchphrase": "It\'s not Charades! It\'s Mimica!",
+      "scent": "Machine Learning",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 7,
+      "name":"Kiyana KikiDunzz Dunlock",
+      "img": "",
+      "catchphrase": "Don\'t Worry, I\'m ok",
+      "scent": "Fresh as Heck",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 8,
+      "name":"Taimur Shah",
+      "img": "",
+      "catchphrase": "Lamb over Rice is the only acceptable halal",
+      "scent": "Brogrammer",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 9,
+      "name":"Thompson Plyler",
+      "img": "",
+      "catchphrase": "If you want to watch an RPG movie, that\'s basically lord of the rings",
+      "scent": "Plank Club",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 10,
+      "name":"Patricio Carrasco",
+      "img": "",
+      "catchphrase": "*cackle that can be heard a mile away*",
+      "scent": "Pine Tree",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 11,
+      "name":"Julissa Lema",
+      "img": "",
+      "catchphrase": "Sorry, I\'m awkward!",
+      "scent": "Daisy",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 12,
+      "name":"Stephen Argentina",
+      "img": "",
+      "catchphrase": "IF",
+      "scent": "Tangerines",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 13,
+      "name":"John Mark Redding",
+      "img": "",
+      "catchphrase": "So. Anyway...",
+      "scent": "Southern Hospitality",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 14,
+      "name":"Jonathan Biro",
+      "img": "",
+      "catchphrase": "Have you switched to VS Code yet?",
+      "scent": "Churrasco",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 15,
+      "name":"Susan Isserman",
+      "img": "",
+      "catchphrase": "Just Chillin W/ My Homies",
+      "scent": "fresh kitten",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 16,
+      "name":"Samuel Prada",
+      "img": "",
+      "catchphrase": "Heyy... That looks really good. :^)",
+      "scent": "Baked Goodies",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 17,
+      "name":"Naomi Baisa",
+      "img": "",
+      "catchphrase": "*squeal*",
+      "scent": "early 2000s Anime",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 18,
+      "name":"Anik Islam",
+      "img": "",
+      "catchphrase": "Did You Know...?",
+      "scent": "Sandlewood",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 19,
+      "name":"La Fountain",
+      "img": "",
+      "catchphrase": "I don\'t do frontend, I do backend",
+      "scent": "Strawberry",
+      "price": 50,
+      "category": "hashgang"
+    },
+    {
+      "id": 20,
+      "name":"Eric Kim",
+      "img": "",
+      "catchphrase": "*in tune of rap airhorn* perperper-perrr",
+      "scent": "Success",
+      "price": 75,
+      "category": "instructors"
+    },
+    {
+      "id": 21,
+      "name":"Gigi Hoagland",
+      "img": "",
+      "catchphrase": "*in tune of announcement horn* perper-perr",
+      "scent": "Rose",
+      "price": 75,
+      "category": "instructors"
+    },
+    {
+      "id": 22,
+      "name":"Tashawn Williams",
+      "img": "",
+      "catchphrase": "Don\'t think I\'m on your side, I actually hate Drake",
+      "scent": "jacket vests",
+      "price": 75,
+      "category": "instructors"
+    },
+    {
+      "id": 23,
+      "name":"Graham Troyer-Joy",
+      "img": "",
+      "catchphrase": "I have had baby shark stuck in my head for 2 weeks",
+      "scent": "death drop",
+      "price": 75,
+      "category": "instructors"
+    },
+    {
+      "id": 24,
+      "name":"Kevin KevyWevy McClear",
+      "img": "",
+      "catchphrase": "*long side talk about his various walks of life*",
+      "scent": "Discovery",
+      "price": 75,
+      "category": "instructors"
+    },
+    {
+      "id": 25,
+      "name":"Jarrian McLean",
+      "img": "",
+      "catchphrase": "Sorry, I\'m Late",
+      "scent": "purple haze",
+      "price": 50,
+      "category": "specialedition"
+    },
+    {
+      "id": 26,
+      "name":"Roman Pirag",
+      "img": "",
+      "catchphrase": "I know you\'re tired of me complaining but I have a condo in the swamp",
+      "scent": "Rock n Roll",
+      "price": 50,
+      "category": "specialedition"
+    },
+    {
+      "id": 27,
+      "name":"Jerold Kim",
+      "img": "",
+      "catchphrase": "NO. SHUT UP.",
+      "scent": "Soju",
+      "price": 50,
+      "category": "specialedition"
+    },
+    {
+      "id": 28,
+      "name":"Milan Sacher",
+      "img": "",
+      "catchphrase": "It\'s me, ya boi~",
+      "scent": "Sunflowers",
+      "price": 50,
+      "category": "specialedition"
+    }
+  ]
+}
