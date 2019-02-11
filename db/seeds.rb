@@ -5,8 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first
+
+Perfume.destroy_all
+
 path = File.join(File.dirname(__FILE__), "perfume_data.json")
 file = File.read(path)
 json = JSON.parse(file)
-byebug
-0
+Perfume.create(json.values.first)
+# byebug
+# 0
