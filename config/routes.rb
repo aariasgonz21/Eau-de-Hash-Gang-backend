@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
+      post "/perfumes/:id/reviews", to: "reviews#create"
       resources :perfumes, only: [:index, :show]
       resources :reviews, only: [:show, :create]
     end

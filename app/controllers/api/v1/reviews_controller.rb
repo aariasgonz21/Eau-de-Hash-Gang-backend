@@ -1,4 +1,5 @@
 class Api::V1::ReviewsController < ApplicationController
+  
   def show
     @review = Review.find(params[:id])
     if @review
@@ -9,7 +10,9 @@ class Api::V1::ReviewsController < ApplicationController
   end
 
   def create
-    @review = Review.new(review_params)
+    # byebug
+    @review = Review.new(name: params[:name], rating: params[:rating], review_text: params[:review_text], perfume_id: params[:id])
+
     if @review.save
       render json: @review
     else
@@ -24,7 +27,7 @@ class Api::V1::ReviewsController < ApplicationController
 
   private
 
-  def review_params
-    params.require(:review).permit(:name, :rating, :review_text)
-  end
+  # def review_params
+  #   params.permit(:name, :rating, :review_text, :id)
+  # end
 end
