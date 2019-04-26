@@ -22652,3 +22652,1847 @@ Processing by Api::V1::PerfumesController#index as */*
 Completed 200 OK in 102ms (Views: 84.9ms | ActiveRecord: 17.2ms)
 
 
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 15:05:42 -0400
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (34.6ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (35.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (241.55ms)
+Completed 200 OK in 433ms (Views: 236.6ms | ActiveRecord: 171.1ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 15:05:52 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (0.5ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (77.09ms)
+Completed 200 OK in 81ms (Views: 60.1ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 15:08:04 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (0.8ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (27.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (15.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (25.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (34.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (43.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (11.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (7.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (291.29ms)
+Completed 200 OK in 296ms (Views: 114.5ms | ActiveRecord: 181.3ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 15:08:49 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (1.4ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (46.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (40.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (32.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (20.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (9.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (16.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (10.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (16.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (275.93ms)
+Completed 200 OK in 282ms (Views: 64.3ms | ActiveRecord: 217.0ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 15:09:15 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (1.1ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (13.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (7.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (5.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (5.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (136.56ms)
+Completed 200 OK in 142ms (Views: 64.8ms | ActiveRecord: 76.4ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 15:40:24 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (3.1ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (12.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (116.6ms)
+Completed 200 OK in 139ms (Views: 80.6ms | ActiveRecord: 58.6ms)
+
+
+Started POST "/api/v1/perfumes/4/reviews" for ::1 at 2019-04-15 15:44:35 -0400
+Processing by Api::V1::ReviewsController#create as */*
+  Parameters: {"name"=>"loved it!", "rating"=>"4", "review_text"=>"super great", "perfume_id"=>4, "id"=>"4", "review"=>{"name"=>"loved it!", "rating"=>"4", "review_text"=>"super great", "perfume_id"=>4}}
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[36mPerfume Load (12.0ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[36mReview Create (13.1ms)[0m  [1m[32mINSERT INTO "reviews" ("name", "rating", "review_text", "created_at", "updated_at", "perfume_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "loved it!"], ["rating", 4], ["review_text", "super great"], ["created_at", "2019-04-15 19:44:35.457988"], ["updated_at", "2019-04-15 19:44:35.457988"], ["perfume_id", 4]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 200 OK in 49ms (Views: 6.2ms | ActiveRecord: 33.6ms)
+
+
+Started PATCH "/api/v1/perfumes/4/reviews/29" for ::1 at 2019-04-15 15:44:54 -0400
+Processing by Api::V1::ReviewsController#update as */*
+  Parameters: {"name"=>"loved it!", "rating"=>"5", "review_text"=>"super great", "perfume_id"=>4, "p_id"=>"4", "r_id"=>"29", "review"=>{"name"=>"loved it!", "rating"=>"5", "review_text"=>"super great", "perfume_id"=>4}}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mPerfume Load (0.5ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mReview Update (9.2ms)[0m  [1m[33mUPDATE "reviews" SET "rating" = $1, "updated_at" = $2 WHERE "reviews"."id" = $3[0m  [["rating", 5], ["updated_at", "2019-04-15 19:44:54.180757"], ["id", 29]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 24ms (Views: 0.8ms | ActiveRecord: 12.4ms)
+
+
+Started PATCH "/api/v1/perfumes/4/reviews/29" for ::1 at 2019-04-15 15:45:20 -0400
+Processing by Api::V1::ReviewsController#update as */*
+  Parameters: {"name"=>"eh", "rating"=>"1", "review_text"=>"super great", "perfume_id"=>4, "p_id"=>"4", "r_id"=>"29", "review"=>{"name"=>"eh", "rating"=>"1", "review_text"=>"super great", "perfume_id"=>4}}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mPerfume Load (0.4ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mReview Update (0.5ms)[0m  [1m[33mUPDATE "reviews" SET "name" = $1, "rating" = $2, "updated_at" = $3 WHERE "reviews"."id" = $4[0m  [["name", "eh"], ["rating", 1], ["updated_at", "2019-04-15 19:45:20.536109"], ["id", 29]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 3.5ms)
+
+
+Started PATCH "/api/v1/perfumes/4/reviews/29" for ::1 at 2019-04-15 15:45:36 -0400
+Processing by Api::V1::ReviewsController#update as */*
+  Parameters: {"name"=>"cool", "rating"=>"3", "review_text"=>"super great", "perfume_id"=>4, "p_id"=>"4", "r_id"=>"29", "review"=>{"name"=>"cool", "rating"=>"3", "review_text"=>"super great", "perfume_id"=>4}}
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mPerfume Load (1.0ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mReview Update (0.7ms)[0m  [1m[33mUPDATE "reviews" SET "name" = $1, "rating" = $2, "updated_at" = $3 WHERE "reviews"."id" = $4[0m  [["name", "cool"], ["rating", 3], ["updated_at", "2019-04-15 19:45:36.482852"], ["id", 29]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 18ms (Views: 1.1ms | ActiveRecord: 9.0ms)
+
+
+Started PATCH "/api/v1/perfumes/4/reviews/29" for ::1 at 2019-04-15 15:46:54 -0400
+Processing by Api::V1::ReviewsController#update as */*
+  Parameters: {"name"=>"meh", "rating"=>"1", "review_text"=>"super great", "perfume_id"=>4, "p_id"=>"4", "r_id"=>"29", "review"=>{"name"=>"meh", "rating"=>"1", "review_text"=>"super great", "perfume_id"=>4}}
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mPerfume Load (0.6ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mReview Update (0.5ms)[0m  [1m[33mUPDATE "reviews" SET "name" = $1, "rating" = $2, "updated_at" = $3 WHERE "reviews"."id" = $4[0m  [["name", "meh"], ["rating", 1], ["updated_at", "2019-04-15 19:46:54.574379"], ["id", 29]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 16ms (Views: 1.0ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 15:50:35 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (48.8ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (5.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (25.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (22.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (19.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (34.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (7.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (222.76ms)
+Completed 200 OK in 280ms (Views: 93.3ms | ActiveRecord: 186.6ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 15:52:36 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (2.8ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (27.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (11.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (7.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (19.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (31.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (11.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (11.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (93.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (17.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (10.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (340.75ms)
+Completed 200 OK in 347ms (Views: 85.1ms | ActiveRecord: 261.7ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 15:54:09 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (0.9ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (16.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (50.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (61.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (99.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (9.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (8.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (15.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (68.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (17.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (6.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (12.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (8.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (7.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (481.06ms)
+Completed 200 OK in 486ms (Views: 83.3ms | ActiveRecord: 402.0ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 15:56:37 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (14.8ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (7.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (39.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (5.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (35.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (17.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (247.71ms)
+Completed 200 OK in 267ms (Views: 104.0ms | ActiveRecord: 162.5ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 16:02:29 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (30.1ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (6.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (2.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (5.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (117.82ms)
+Completed 200 OK in 210ms (Views: 79.9ms | ActiveRecord: 128.5ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 16:04:29 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (22.7ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (18.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (10.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (5.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (7.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (144.39ms)
+Completed 200 OK in 171ms (Views: 79.2ms | ActiveRecord: 91.3ms)
+
+
+Started PATCH "/api/v1/perfumes/8/reviews/14" for ::1 at 2019-04-15 16:09:31 -0400
+Processing by Api::V1::ReviewsController#update as */*
+  Parameters: {"name"=>"chicken burger", "rating"=>"3", "review_text"=>"asdfghjkl!", "perfume_id"=>8, "p_id"=>"8", "r_id"=>"14", "review"=>{"name"=>"chicken burger", "rating"=>"3", "review_text"=>"asdfghjkl!", "perfume_id"=>8}}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mPerfume Load (0.3ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mReview Update (0.7ms)[0m  [1m[33mUPDATE "reviews" SET "rating" = $1, "updated_at" = $2 WHERE "reviews"."id" = $3[0m  [["rating", 3], ["updated_at", "2019-04-15 20:09:31.420342"], ["id", 14]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 9.8ms)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (31.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (258.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "eau-de-yerold_development"[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (244.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "eau-de-yerold_test"[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (620.0ms)[0m  [1m[35mCREATE DATABASE "eau-de-yerold_development" ENCODING = 'unicode'[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (494.3ms)[0m  [1m[35mCREATE DATABASE "eau-de-yerold_test" ENCODING = 'unicode'[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35mSQL (3.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (2.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "perfumes" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (37.7ms)[0m  [1m[35mCREATE TABLE "perfumes" ("id" bigserial primary key, "name" character varying, "img" character varying, "catchphrase" character varying, "scent" character varying, "price" integer, "category" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews" CASCADE[0m
+  ↳ db/schema.rb:29
+  [1m[35m (17.5ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "name" character varying, "rating" integer, "review_text" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "perfume_id" bigint)[0m
+  ↳ db/schema.rb:29
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_perfume_id" ON "reviews"  ("perfume_id")[0m
+  ↳ db/schema.rb:29
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190211213249)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190211212300),
+(20190208194839);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-04-15 20:11:06.912306"], ["updated_at", "2019-04-15 20:11:06.912306"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35mSQL (0.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "perfumes" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (19.3ms)[0m  [1m[35mCREATE TABLE "perfumes" ("id" bigserial primary key, "name" character varying, "img" character varying, "catchphrase" character varying, "scent" character varying, "price" integer, "category" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews" CASCADE[0m
+  ↳ db/schema.rb:29
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "name" character varying, "rating" integer, "review_text" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "perfume_id" bigint)[0m
+  ↳ db/schema.rb:29
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_perfume_id" ON "reviews"  ("perfume_id")[0m
+  ↳ db/schema.rb:29
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190211213249)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190211212300),
+(20190208194839);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-04-15 20:11:07.065477"], ["updated_at", "2019-04-15 20:11:07.065477"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-04-15 20:11:07.071658"], ["key", "environment"]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mPerfume Load (0.8ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.8ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 1], ["name", "Joe Lorenzo"], ["img", "joe.svg"], ["catchphrase", "It's cool, man. The music in the bathrooms at WeWork is good."], ["scent", "birchwood & mint"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.136707"], ["updated_at", "2019-04-15 20:11:07.136707"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 2], ["name", "Gracie McGuire"], ["img", "gracie.svg"], ["catchphrase", "Dad?"], ["scent", "vanilla coconut"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.145783"], ["updated_at", "2019-04-15 20:11:07.145783"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 3], ["name", "Mariel Westervelt"], ["img", "mariel.svg"], ["catchphrase", "skrt skrt. When I was 23, I"], ["scent", "garlic butter"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.149642"], ["updated_at", "2019-04-15 20:11:07.149642"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 4], ["name", "Ana Arias-Gonzalez"], ["img", "ana.svg"], ["catchphrase", "Let's Get This Bread"], ["scent", "egyptian musk incense"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.153336"], ["updated_at", "2019-04-15 20:11:07.153336"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 5], ["name", "Joel Rivera"], ["img", "joel.svg"], ["catchphrase", "Drake is the best rapper of all time."], ["scent", "the grind"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.156895"], ["updated_at", "2019-04-15 20:11:07.156895"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 6], ["name", "Jesus Escalona"], ["img", "jesus.svg"], ["catchphrase", "It's not Charades! It's Mimica!"], ["scent", "Machine Learning"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.160478"], ["updated_at", "2019-04-15 20:11:07.160478"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.6ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 7], ["name", "Kiyana KikiDunzz Dunlock"], ["img", "kiki.svg"], ["catchphrase", "Don't Worry, I'm ok"], ["scent", "Fresh as Heck"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.164694"], ["updated_at", "2019-04-15 20:11:07.164694"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.8ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 8], ["name", "Taimur Shah"], ["img", "taimur.svg"], ["catchphrase", "Lamb over Rice is the only acceptable halal"], ["scent", "Brogrammer"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.168992"], ["updated_at", "2019-04-15 20:11:07.168992"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 9], ["name", "Thompson Plyler"], ["img", "thompson.svg"], ["catchphrase", "If you want to watch an RPG movie, that's basically lord of the rings"], ["scent", "Plank Club"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.172948"], ["updated_at", "2019-04-15 20:11:07.172948"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 10], ["name", "Patricio Carrasco"], ["img", "pat.svg"], ["catchphrase", "So this week..I'm tired"], ["scent", "Pine Tree"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.178108"], ["updated_at", "2019-04-15 20:11:07.178108"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 11], ["name", "Julissa Lema"], ["img", "julissa.svg"], ["catchphrase", "Sorry, I'm awkward!"], ["scent", "Daisy"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.181562"], ["updated_at", "2019-04-15 20:11:07.181562"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.9ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 12], ["name", "Stephen Argentina"], ["img", "stephen.svg"], ["catchphrase", "IF"], ["scent", "Tangerines"], ["price", 47], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.185188"], ["updated_at", "2019-04-15 20:11:07.185188"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 13], ["name", "John Mark Redding"], ["img", "johnmark.svg"], ["catchphrase", "So. Anyway..."], ["scent", "Southern Hospitality"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.189829"], ["updated_at", "2019-04-15 20:11:07.189829"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 14], ["name", "Jonathan Biro"], ["img", "jonathan.svg"], ["catchphrase", "Have you switched to VS Code yet?"], ["scent", "Churrasco"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.193130"], ["updated_at", "2019-04-15 20:11:07.193130"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 15], ["name", "Susan Isserman"], ["img", "susan.svg"], ["catchphrase", "Just Chillin W/ My Homies"], ["scent", "fresh kitten"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.196421"], ["updated_at", "2019-04-15 20:11:07.196421"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 16], ["name", "Samuel Prada"], ["img", "sam.svg"], ["catchphrase", "Heyy... That looks really good. :^)"], ["scent", "Baked Goodies"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.199759"], ["updated_at", "2019-04-15 20:11:07.199759"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 17], ["name", "Naomi Baisa"], ["img", "naomi.svg"], ["catchphrase", "*squeal*"], ["scent", "early 2000s Anime"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.203567"], ["updated_at", "2019-04-15 20:11:07.203567"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 18], ["name", "Anik Islam"], ["img", "anik.svg"], ["catchphrase", "Did You Know...?"], ["scent", "Sandlewood"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.207040"], ["updated_at", "2019-04-15 20:11:07.207040"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 19], ["name", "La Fountain"], ["img", "la.svg"], ["catchphrase", "I don't do frontend, I do backend"], ["scent", "Strawberry"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:11:07.210812"], ["updated_at", "2019-04-15 20:11:07.210812"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 20], ["name", "Eric Kim"], ["img", "eric.svg"], ["catchphrase", "*in tune of rap airhorn* perperper-perrr"], ["scent", "Success"], ["price", 75], ["category", "instructors"], ["created_at", "2019-04-15 20:11:07.214716"], ["updated_at", "2019-04-15 20:11:07.214716"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 21], ["name", "Gigi Hoagland"], ["img", "gigi.svg"], ["catchphrase", "*in tune of announcement horn* perper-perr"], ["scent", "Rose"], ["price", 75], ["category", "instructors"], ["created_at", "2019-04-15 20:11:07.218373"], ["updated_at", "2019-04-15 20:11:07.218373"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 22], ["name", "Tashawn Williams"], ["img", "tashawn.svg"], ["catchphrase", "Don't think I'm on your side, I actually hate Drake"], ["scent", "jacket vests"], ["price", 75], ["category", "instructors"], ["created_at", "2019-04-15 20:11:07.222122"], ["updated_at", "2019-04-15 20:11:07.222122"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 23], ["name", "Graham Troyer-Joy"], ["img", "graham.svg"], ["catchphrase", "I have had baby shark stuck in my head for 2 weeks"], ["scent", "death drop"], ["price", 75], ["category", "instructors"], ["created_at", "2019-04-15 20:11:07.225583"], ["updated_at", "2019-04-15 20:11:07.225583"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 24], ["name", "Kevin KevyWevy McAlear"], ["img", "kevywevy.svg"], ["catchphrase", "*long side talk about his various walks of life*"], ["scent", "Discovery"], ["price", 75], ["category", "instructors"], ["created_at", "2019-04-15 20:11:07.229120"], ["updated_at", "2019-04-15 20:11:07.229120"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 25], ["name", "Jarrian McLean"], ["img", "jarrian.svg"], ["catchphrase", "Sorry, I'm Late"], ["scent", "purple haze"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-04-15 20:11:07.232722"], ["updated_at", "2019-04-15 20:11:07.232722"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 26], ["name", "Roman Pirag"], ["img", "roman.svg"], ["catchphrase", "I know you're tired of me complaining but I have a condo in the swamp"], ["scent", "Rock n Roll"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-04-15 20:11:07.236407"], ["updated_at", "2019-04-15 20:11:07.236407"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.5ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 27], ["name", "Jerold Kim"], ["img", "jerold.svg"], ["catchphrase", "NO. SHUT UP."], ["scent", "Soju"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-04-15 20:11:07.240056"], ["updated_at", "2019-04-15 20:11:07.240056"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.4ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 28], ["name", "Milan Sacher"], ["img", "milan.svg"], ["catchphrase", "It's me, ya boi~"], ["scent", "Sunflowers"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-04-15 20:11:07.243942"], ["updated_at", "2019-04-15 20:11:07.243942"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 16:11:23 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (0.8ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (14.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (95.59ms)
+Completed 200 OK in 156ms (Views: 112.2ms | ActiveRecord: 33.7ms)
+
+
+Started POST "/api/v1/perfumes/4/reviews" for ::1 at 2019-04-15 16:18:22 -0400
+Processing by Api::V1::ReviewsController#create as */*
+  Parameters: {"name"=>"loved it!", "rating"=>"4", "review_text"=>"pretty cool", "perfume_id"=>4, "id"=>"4", "review"=>{"name"=>"loved it!", "rating"=>"4", "review_text"=>"pretty cool", "perfume_id"=>4}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[36mPerfume Load (0.7ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[36mReview Create (1.8ms)[0m  [1m[32mINSERT INTO "reviews" ("name", "rating", "review_text", "created_at", "updated_at", "perfume_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "loved it!"], ["rating", 4], ["review_text", "pretty cool"], ["created_at", "2019-04-15 20:18:22.789556"], ["updated_at", "2019-04-15 20:18:22.789556"], ["perfume_id", 4]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 63ms (Views: 7.1ms | ActiveRecord: 25.2ms)
+
+
+Started PATCH "/api/v1/perfumes/4/reviews/1" for ::1 at 2019-04-15 16:18:31 -0400
+Processing by Api::V1::ReviewsController#update as */*
+  Parameters: {"name"=>"loved it!", "rating"=>"5", "review_text"=>"pretty cool", "perfume_id"=>4, "p_id"=>"4", "r_id"=>"1", "review"=>{"name"=>"loved it!", "rating"=>"5", "review_text"=>"pretty cool", "perfume_id"=>4}}
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mPerfume Load (0.5ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mReview Update (3.8ms)[0m  [1m[33mUPDATE "reviews" SET "rating" = $1, "updated_at" = $2 WHERE "reviews"."id" = $3[0m  [["rating", 5], ["updated_at", "2019-04-15 20:18:31.654993"], ["id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 40ms (Views: 1.1ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 16:20:28 -0400
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (2.5ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (5.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (9.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (6.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (14.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (9.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (3.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (138.25ms)
+Completed 200 OK in 145ms (Views: 58.7ms | ActiveRecord: 86.1ms)
+
+
+Started POST "/api/v1/perfumes/4/reviews" for ::1 at 2019-04-15 16:22:42 -0400
+Processing by Api::V1::ReviewsController#create as */*
+  Parameters: {"name"=>"really cool", "rating"=>"4", "review_text"=>"my fave", "perfume_id"=>4, "id"=>"4", "review"=>{"name"=>"really cool", "rating"=>"4", "review_text"=>"my fave", "perfume_id"=>4}}
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[36mPerfume Load (0.5ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("name", "rating", "review_text", "created_at", "updated_at", "perfume_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "really cool"], ["rating", 4], ["review_text", "my fave"], ["created_at", "2019-04-15 20:22:42.538412"], ["updated_at", "2019-04-15 20:22:42.538412"], ["perfume_id", 4]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 17ms (Views: 2.1ms | ActiveRecord: 9.1ms)
+
+
+Started PATCH "/api/v1/perfumes/4/reviews/1" for ::1 at 2019-04-15 16:23:01 -0400
+Processing by Api::V1::ReviewsController#update as */*
+  Parameters: {"name"=>"loved it!", "rating"=>5, "review_text"=>"awesome", "perfume_id"=>4, "p_id"=>"4", "r_id"=>"1", "review"=>{"name"=>"loved it!", "rating"=>5, "review_text"=>"awesome", "perfume_id"=>4}}
+  [1m[36mReview Load (2.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mPerfume Load (0.4ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mReview Update (5.9ms)[0m  [1m[33mUPDATE "reviews" SET "review_text" = $1, "updated_at" = $2 WHERE "reviews"."id" = $3[0m  [["review_text", "awesome"], ["updated_at", "2019-04-15 20:23:01.930724"], ["id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 14.1ms)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (205.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "eau-de-yerold_development"[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (182.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "eau-de-yerold_test"[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (521.3ms)[0m  [1m[35mCREATE DATABASE "eau-de-yerold_development" ENCODING = 'unicode'[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (566.6ms)[0m  [1m[35mCREATE DATABASE "eau-de-yerold_test" ENCODING = 'unicode'[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35mSQL (0.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "perfumes" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (20.2ms)[0m  [1m[35mCREATE TABLE "perfumes" ("id" bigserial primary key, "name" character varying, "img" character varying, "catchphrase" character varying, "scent" character varying, "price" integer, "category" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews" CASCADE[0m
+  ↳ db/schema.rb:29
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "name" character varying, "rating" integer, "review_text" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "perfume_id" bigint)[0m
+  ↳ db/schema.rb:29
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_perfume_id" ON "reviews"  ("perfume_id")[0m
+  ↳ db/schema.rb:29
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190211213249)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190211212300),
+(20190208194839);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-04-15 20:24:36.115802"], ["updated_at", "2019-04-15 20:24:36.115802"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35mSQL (0.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "perfumes" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (20.2ms)[0m  [1m[35mCREATE TABLE "perfumes" ("id" bigserial primary key, "name" character varying, "img" character varying, "catchphrase" character varying, "scent" character varying, "price" integer, "category" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews" CASCADE[0m
+  ↳ db/schema.rb:29
+  [1m[35m (15.3ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "name" character varying, "rating" integer, "review_text" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "perfume_id" bigint)[0m
+  ↳ db/schema.rb:29
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_perfume_id" ON "reviews"  ("perfume_id")[0m
+  ↳ db/schema.rb:29
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190211213249)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190211212300),
+(20190208194839);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-04-15 20:24:36.273862"], ["updated_at", "2019-04-15 20:24:36.273862"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-04-15 20:24:36.281162"], ["key", "environment"]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mPerfume Load (0.8ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.8ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 1], ["name", "Joe Lorenzo"], ["img", "joe.svg"], ["catchphrase", "It's cool, man. The music in the bathrooms at WeWork is good."], ["scent", "birchwood & mint"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.347674"], ["updated_at", "2019-04-15 20:24:36.347674"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 2], ["name", "Gracie McGuire"], ["img", "gracie.svg"], ["catchphrase", "Dad?"], ["scent", "vanilla coconut"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.356951"], ["updated_at", "2019-04-15 20:24:36.356951"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 3], ["name", "Mariel Westervelt"], ["img", "mariel.svg"], ["catchphrase", "skrt skrt. When I was 23, I"], ["scent", "garlic butter"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.362060"], ["updated_at", "2019-04-15 20:24:36.362060"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 4], ["name", "Ana Arias-Gonzalez"], ["img", "ana.svg"], ["catchphrase", "Let's Get This Bread"], ["scent", "egyptian musk incense"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.367098"], ["updated_at", "2019-04-15 20:24:36.367098"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 5], ["name", "Joel Rivera"], ["img", "joel.svg"], ["catchphrase", "Drake is the best rapper of all time."], ["scent", "the grind"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.372812"], ["updated_at", "2019-04-15 20:24:36.372812"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 6], ["name", "Jesus Escalona"], ["img", "jesus.svg"], ["catchphrase", "It's not Charades! It's Mimica!"], ["scent", "Machine Learning"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.378064"], ["updated_at", "2019-04-15 20:24:36.378064"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 7], ["name", "Kiyana KikiDunzz Dunlock"], ["img", "kiki.svg"], ["catchphrase", "Don't Worry, I'm ok"], ["scent", "Fresh as Heck"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.383207"], ["updated_at", "2019-04-15 20:24:36.383207"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 8], ["name", "Taimur Shah"], ["img", "taimur.svg"], ["catchphrase", "Lamb over Rice is the only acceptable halal"], ["scent", "Brogrammer"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.388741"], ["updated_at", "2019-04-15 20:24:36.388741"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 9], ["name", "Thompson Plyler"], ["img", "thompson.svg"], ["catchphrase", "If you want to watch an RPG movie, that's basically lord of the rings"], ["scent", "Plank Club"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.394065"], ["updated_at", "2019-04-15 20:24:36.394065"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.9ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 10], ["name", "Patricio Carrasco"], ["img", "pat.svg"], ["catchphrase", "So this week..I'm tired"], ["scent", "Pine Tree"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.398322"], ["updated_at", "2019-04-15 20:24:36.398322"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 11], ["name", "Julissa Lema"], ["img", "julissa.svg"], ["catchphrase", "Sorry, I'm awkward!"], ["scent", "Daisy"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.403881"], ["updated_at", "2019-04-15 20:24:36.403881"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 12], ["name", "Stephen Argentina"], ["img", "stephen.svg"], ["catchphrase", "IF"], ["scent", "Tangerines"], ["price", 47], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.409041"], ["updated_at", "2019-04-15 20:24:36.409041"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 13], ["name", "John Mark Redding"], ["img", "johnmark.svg"], ["catchphrase", "So. Anyway..."], ["scent", "Southern Hospitality"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.414125"], ["updated_at", "2019-04-15 20:24:36.414125"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (1.0ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 14], ["name", "Jonathan Biro"], ["img", "jonathan.svg"], ["catchphrase", "Have you switched to VS Code yet?"], ["scent", "Churrasco"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.419173"], ["updated_at", "2019-04-15 20:24:36.419173"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 15], ["name", "Susan Isserman"], ["img", "susan.svg"], ["catchphrase", "Just Chillin W/ My Homies"], ["scent", "fresh kitten"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.425066"], ["updated_at", "2019-04-15 20:24:36.425066"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 16], ["name", "Samuel Prada"], ["img", "sam.svg"], ["catchphrase", "Heyy... That looks really good. :^)"], ["scent", "Baked Goodies"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.430237"], ["updated_at", "2019-04-15 20:24:36.430237"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 17], ["name", "Naomi Baisa"], ["img", "naomi.svg"], ["catchphrase", "*squeal*"], ["scent", "early 2000s Anime"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.435492"], ["updated_at", "2019-04-15 20:24:36.435492"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 18], ["name", "Anik Islam"], ["img", "anik.svg"], ["catchphrase", "Did You Know...?"], ["scent", "Sandlewood"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.440889"], ["updated_at", "2019-04-15 20:24:36.440889"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.8ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 19], ["name", "La Fountain"], ["img", "la.svg"], ["catchphrase", "I don't do frontend, I do backend"], ["scent", "Strawberry"], ["price", 50], ["category", "hashgang"], ["created_at", "2019-04-15 20:24:36.446182"], ["updated_at", "2019-04-15 20:24:36.446182"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 20], ["name", "Eric Kim"], ["img", "eric.svg"], ["catchphrase", "*in tune of rap airhorn* perperper-perrr"], ["scent", "Success"], ["price", 75], ["category", "instructors"], ["created_at", "2019-04-15 20:24:36.451604"], ["updated_at", "2019-04-15 20:24:36.451604"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 21], ["name", "Gigi Hoagland"], ["img", "gigi.svg"], ["catchphrase", "*in tune of announcement horn* perper-perr"], ["scent", "Rose"], ["price", 75], ["category", "instructors"], ["created_at", "2019-04-15 20:24:36.456939"], ["updated_at", "2019-04-15 20:24:36.456939"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 22], ["name", "Tashawn Williams"], ["img", "tashawn.svg"], ["catchphrase", "Don't think I'm on your side, I actually hate Drake"], ["scent", "jacket vests"], ["price", 75], ["category", "instructors"], ["created_at", "2019-04-15 20:24:36.462184"], ["updated_at", "2019-04-15 20:24:36.462184"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 23], ["name", "Graham Troyer-Joy"], ["img", "graham.svg"], ["catchphrase", "I have had baby shark stuck in my head for 2 weeks"], ["scent", "death drop"], ["price", 75], ["category", "instructors"], ["created_at", "2019-04-15 20:24:36.467316"], ["updated_at", "2019-04-15 20:24:36.467316"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 24], ["name", "Kevin KevyWevy McAlear"], ["img", "kevywevy.svg"], ["catchphrase", "*long side talk about his various walks of life*"], ["scent", "Discovery"], ["price", 75], ["category", "instructors"], ["created_at", "2019-04-15 20:24:36.472643"], ["updated_at", "2019-04-15 20:24:36.472643"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 25], ["name", "Jarrian McLean"], ["img", "jarrian.svg"], ["catchphrase", "Sorry, I'm Late"], ["scent", "purple haze"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-04-15 20:24:36.477820"], ["updated_at", "2019-04-15 20:24:36.477820"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.9ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 26], ["name", "Roman Pirag"], ["img", "roman.svg"], ["catchphrase", "I know you're tired of me complaining but I have a condo in the swamp"], ["scent", "Rock n Roll"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-04-15 20:24:36.483187"], ["updated_at", "2019-04-15 20:24:36.483187"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 27], ["name", "Jerold Kim"], ["img", "jerold.svg"], ["catchphrase", "NO. SHUT UP."], ["scent", "Soju"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-04-15 20:24:36.488703"], ["updated_at", "2019-04-15 20:24:36.488703"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPerfume Create (0.7ms)[0m  [1m[32mINSERT INTO "perfumes" ("id", "name", "img", "catchphrase", "scent", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 28], ["name", "Milan Sacher"], ["img", "milan.svg"], ["catchphrase", "It's me, ya boi~"], ["scent", "Sunflowers"], ["price", 50], ["category", "specialedition"], ["created_at", "2019-04-15 20:24:36.493927"], ["updated_at", "2019-04-15 20:24:36.493927"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-15 16:24:46 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (0.8ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (75.66ms)
+Completed 200 OK in 135ms (Views: 108.7ms | ActiveRecord: 21.4ms)
+
+
+Started POST "/api/v1/perfumes/4/reviews" for ::1 at 2019-04-15 16:26:21 -0400
+Processing by Api::V1::ReviewsController#create as */*
+  Parameters: {"name"=>"loved it!", "rating"=>"5", "review_text"=>"really cool", "perfume_id"=>4, "id"=>"4", "review"=>{"name"=>"loved it!", "rating"=>"5", "review_text"=>"really cool", "perfume_id"=>4}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[36mPerfume Load (2.0ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[36mReview Create (1.7ms)[0m  [1m[32mINSERT INTO "reviews" ("name", "rating", "review_text", "created_at", "updated_at", "perfume_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "loved it!"], ["rating", 5], ["review_text", "really cool"], ["created_at", "2019-04-15 20:26:21.739419"], ["updated_at", "2019-04-15 20:26:21.739419"], ["perfume_id", 4]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 54ms (Views: 5.7ms | ActiveRecord: 18.9ms)
+
+
+Started PATCH "/api/v1/perfumes/4/reviews/1" for ::1 at 2019-04-15 16:26:53 -0400
+Processing by Api::V1::ReviewsController#update as */*
+  Parameters: {"name"=>"loved it, i think?", "rating"=>"4", "review_text"=>"really cool", "perfume_id"=>4, "p_id"=>"4", "r_id"=>"1", "review"=>{"name"=>"loved it, i think?", "rating"=>"4", "review_text"=>"really cool", "perfume_id"=>4}}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mPerfume Load (2.9ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mReview Update (0.8ms)[0m  [1m[33mUPDATE "reviews" SET "name" = $1, "rating" = $2, "updated_at" = $3 WHERE "reviews"."id" = $4[0m  [["name", "loved it, i think?"], ["rating", 4], ["updated_at", "2019-04-15 20:26:53.527048"], ["id", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 28ms (Views: 2.2ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/api/v1/perfumes" for ::1 at 2019-04-26 17:49:05 -0400
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::PerfumesController#index as */*
+  [1m[36mPerfume Load (25.1ms)[0m  [1m[34mSELECT "perfumes".* FROM "perfumes"[0m
+  ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (4.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (12.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 7]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 8]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 9]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 12]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 13]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 14]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 15]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 16]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 17]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 18]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 19]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 20]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 21]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 22]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 23]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 24]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 25]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 26]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 27]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers]   [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."perfume_id" = $1[0m  [["perfume_id", 28]]
+[active_model_serializers]   ↳ app/controllers/api/v1/perfumes_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (142.96ms)
+Completed 200 OK in 253ms (Views: 145.8ms | ActiveRecord: 101.1ms)
+
+
+Started POST "/api/v1/perfumes/3/reviews" for ::1 at 2019-04-26 17:51:19 -0400
+Processing by Api::V1::ReviewsController#create as */*
+  Parameters: {"name"=>"Great Scent!", "rating"=>"5", "review_text"=>"5 out of 5 would buy again", "perfume_id"=>3, "id"=>"3", "review"=>{"name"=>"Great Scent!", "rating"=>"5", "review_text"=>"5 out of 5 would buy again", "perfume_id"=>3}}
+  [1m[35m (6.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[36mPerfume Load (11.0ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[36mReview Create (11.1ms)[0m  [1m[32mINSERT INTO "reviews" ("name", "rating", "review_text", "created_at", "updated_at", "perfume_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Great Scent!"], ["rating", 5], ["review_text", "5 out of 5 would buy again"], ["created_at", "2019-04-26 21:51:19.057296"], ["updated_at", "2019-04-26 21:51:19.057296"], ["perfume_id", 3]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:16
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.14ms)
+Completed 200 OK in 53ms (Views: 3.9ms | ActiveRecord: 31.4ms)
+
+
+Started PATCH "/api/v1/perfumes/3/reviews/2" for ::1 at 2019-04-26 17:52:07 -0400
+Processing by Api::V1::ReviewsController#update as */*
+  Parameters: {"name"=>"Great Scent!", "rating"=>"3", "review_text"=>"eh", "perfume_id"=>3, "p_id"=>"3", "r_id"=>"2", "review"=>{"name"=>"Great Scent!", "rating"=>"3", "review_text"=>"eh", "perfume_id"=>3}}
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:25
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mPerfume Load (0.4ms)[0m  [1m[34mSELECT  "perfumes".* FROM "perfumes" WHERE "perfumes"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[36mReview Update (18.0ms)[0m  [1m[33mUPDATE "reviews" SET "rating" = $1, "review_text" = $2, "updated_at" = $3 WHERE "reviews"."id" = $4[0m  [["rating", 3], ["review_text", "eh"], ["updated_at", "2019-04-26 21:52:07.984401"], ["id", 2]]
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:26
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/reviews_controller.rb:28
+[active_model_serializers] Rendered ReviewSerializer with ActiveModelSerializers::Adapter::Attributes (0.14ms)
+Completed 200 OK in 43ms (Views: 0.8ms | ActiveRecord: 23.7ms)
+
+

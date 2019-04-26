@@ -1,24 +1,46 @@
-# README
+# Eau De Hash Gang (Front End)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
 
-Things you may want to cover:
+A mock e-commerce web application based on Flatiron School Cohort (Named 'Hash Gang') where the students are now scents!
 
-* Ruby version
+## Features
+- Users can search through scents
+- Users can add and remove scents from a cart
+- Users can view, make and edit ratings and reviews
 
-* System dependencies
+## Made Using
+- React
+- Ruby on Rails
+- CSS
+- Semantic UI
 
-* Configuration
+## Installation
 
-* Database creation
+### `bundle install`
 
-* Database initialization
+Installs necessary packages to run application properly.
 
-* How to run the test suite
+### `rails s -p 3001`
+Starts backend server
 
-* Services (job queues, cache servers, search engines, etc.)
+**Note: Backend must run on localhost:3001**
 
-* Deployment instructions
+## Screenshots
 
-* ...
+![Home](/public/eau-home.png)
+
+---
+
+![Perfumes](/public/eau-perfumes.png)
+
+---
+
+![AddReview](/public/eau-add-review.png)
+---
+
+![Reviews](/public/eau-review.png)
+
+---
+
+![Edit](/public/eau-edit.png)
